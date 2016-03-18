@@ -21,7 +21,7 @@
         </thead>
 
         <tbody>
-            <tr class="row.cssClass" repeat.for="row of filteredItems">
+            <tr class.bind="row.cssClass" repeat.for="row of filteredItems">
                 <template replaceable part="grid-template"></template>
             </tr>
         </tbody>
