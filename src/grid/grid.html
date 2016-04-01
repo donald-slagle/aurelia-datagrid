@@ -24,7 +24,7 @@
         </div>
 
         <div class="dtd-table-body"y>
-            <div class="dtd-table-row" repeat.for="row of filteredItems">
+            <div class="dtd-table-row ${row.cssClass}" repeat.for="row of filteredItems">
                 <template replaceable part="grid-template"></template>
             </div>
         </div>
