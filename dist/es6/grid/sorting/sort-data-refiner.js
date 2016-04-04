@@ -25,11 +25,11 @@ export default class SortDataRefiner {
     if (this.sort.direction) {
         if(this.sort.property == 'LastContactTime' || this.sort.property == 'DateUpdated') {
             if(this.sort.direction == sortConstants.sortDescending) {
-                return data.sort(function(a,b) { 
+                return data.sort((a,b) => { 
                     return new Date(a[this.sort.property]).getTime() - new Date(b[this.sort.property]).getTime() 
                 });
             } else {
-                return data.sort(function(a,b) { 
+                return data.sort((a,b) => { 
                     return new Date(b[this.sort.property]).getTime() - new Date(a[this.sort.property]).getTime() 
                 });
             }

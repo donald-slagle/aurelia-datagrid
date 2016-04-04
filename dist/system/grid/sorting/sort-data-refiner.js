@@ -42,15 +42,17 @@ System.register(['lodash', './sort-constants'], function (_export) {
         }, {
           key: 'applySort',
           value: function applySort(data) {
+            var _this2 = this;
+
             if (this.sort.direction) {
               if (this.sort.property == 'LastContactTime' || this.sort.property == 'DateUpdated') {
                 if (this.sort.direction == sortConstants.sortDescending) {
                   return data.sort(function (a, b) {
-                    return new Date(a[this.sort.property]).getTime() - new Date(b[this.sort.property]).getTime();
+                    return new Date(a[_this2.sort.property]).getTime() - new Date(b[_this2.sort.property]).getTime();
                   });
                 } else {
                   return data.sort(function (a, b) {
-                    return new Date(b[this.sort.property]).getTime() - new Date(a[this.sort.property]).getTime();
+                    return new Date(b[_this2.sort.property]).getTime() - new Date(a[_this2.sort.property]).getTime();
                   });
                 }
               }
