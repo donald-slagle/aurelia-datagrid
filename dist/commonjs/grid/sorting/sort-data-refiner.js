@@ -47,6 +47,17 @@ var SortDataRefiner = (function () {
     key: 'applySort',
     value: function applySort(data) {
       if (this.sort.direction) {
+        if (this.sort.property == 'LastContactTime' || this.sort.property == 'DateUpdated') {
+          if (this.sort.direction == _sortConstants2['default'].sortDescending) {
+            return data.sort(function (a, b) {
+              return new Date(a[this.sort.property]).getTime() - new Date(b[this.sort.property]).getTime();
+            });
+          } else {
+            return data.sort(function (a, b) {
+              return new Date(b[this.sort.property]).getTime() - new Date(a[this.sort.property]).getTime();
+            });
+          }
+        }
         return _lodash2['default'].sortByOrder(data, this.sort.property, this.sort.direction);
       }
       return data;

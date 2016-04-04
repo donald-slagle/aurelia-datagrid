@@ -23,9 +23,20 @@ export default class SortDataRefiner {
 
   applySort(data) {
     if (this.sort.direction) {
-      return _.sortByOrder(data,
-        this.sort.property,
-        this.sort.direction);
+        if(this.sort.property == 'LastContactTime' || this.sort.property == 'DateUpdated') {
+            if(this.sort.direction == sortConstants.sortDescending) {
+                return data.sort(function(a,b) { 
+                    return new Date(a[this.sort.property]).getTime() - new Date(b[this.sort.property]).getTime() 
+                });
+            } else {
+                return data.sort(function(a,b) { 
+                    return new Date(b[this.sort.property]).getTime() - new Date(a[this.sort.property]).getTime() 
+                });
+            }
+        }
+        return _.sortByOrder(data,
+            this.sort.property,
+            this.sort.direction);
     }
     return data;
   }
