@@ -11,13 +11,12 @@
     "semantic"
   ],
   "homepage": "http://donthedev.com",
-  "main": "dist/commonjs/aurelia-datagrid.js",
   "bugs": {
     "url": "https://github.com/donnelljenkins/aurelia-grid/issues"
   },
   "license": "MIT",
   "author": "Donnell Jenkins <djenkins@donthedev.com> (http://donthedev.com/)",
-  "main": "dist/aurelia-grid.js",
+  "main": "dist/commonjs/aurelia-datagrid.js",
   "repository": {
     "type": "git",
     "url": "http://github.com/donthedev/aurelia-grid"
