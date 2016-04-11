@@ -11,6 +11,7 @@
     "semantic"
   ],
   "homepage": "http://donthedev.com",
+  "main": "dist/commonjs/aurelia-datagrid.js",
   "bugs": {
     "url": "https://github.com/donnelljenkins/aurelia-grid/issues"
   },
