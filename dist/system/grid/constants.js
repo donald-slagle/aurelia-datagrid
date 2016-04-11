@@ -1,4 +1,4 @@
-System.register(['./sorting/sortConstants'], function (_export) {
+System.register(['./sorting/sort-constants'], function (_export) {
   'use strict';
 
   var sortConstants;

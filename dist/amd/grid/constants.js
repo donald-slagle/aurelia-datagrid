@@ -1,4 +1,4 @@
-define(['exports', './sorting/sortConstants'], function (exports, _sortingSortConstants) {
+define(['exports', './sorting/sort-constants'], function (exports, _sortingSortConstants) {
   'use strict';
 
   Object.defineProperty(exports, '__esModule', {

@@ -1,3 +1,3 @@
-﻿import sortConstants from './sorting/sortConstants';
+﻿import sortConstants from './sorting/sort-constants';
 
 export { sortConstants };

@@ -6,7 +6,7 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _sortingSortConstants = require('./sorting/sortConstants');
+var _sortingSortConstants = require('./sorting/sort-constants');
 
 var _sortingSortConstants2 = _interopRequireDefault(_sortingSortConstants);
 
